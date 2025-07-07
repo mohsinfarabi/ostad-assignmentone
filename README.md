@@ -1,0 +1,1 @@
+This is the sample readme file created for the assginment one for OSTAD Devops course
