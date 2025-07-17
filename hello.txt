@@ -1,2 +1,3 @@
 This is a text file to check branching
 THIS IS to check the workflow assignment
+Another line added to check the workflow functionality
