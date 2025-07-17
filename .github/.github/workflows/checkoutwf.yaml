@@ -1,0 +1,21 @@
+name: Workflow Pipeline Assignment
+on:
+  push:
+    branches: [ main]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Read file contents
+        id: read_file
+        uses: andstor/file-reader-action@v1
+        with:
+          path: "package.json"
+
+      - name: File contents
+        run: echo "${ steps.read_file.outputs.contents }"
